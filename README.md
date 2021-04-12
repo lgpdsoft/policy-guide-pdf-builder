@@ -9,7 +9,7 @@
 
 Crie uma política de privacidade LGPD editando em tempo real o conteúdo do modelo inicial da LGPDSOFT. Você pode imprimir diretamente os tópicos editados ou salvá-los na extensão ".PDF".
 
-**[Demonstração Online](https://lgpdsoft.com)**
+**[Demonstração Online](https://lgpdsoft.com/projects/policy-guide/builder/pdf)**
 
 :warning: ESTE MODELO FOI DESENVOLVIDO PARA A CONSTRUÇÃO INICIAL DE UMA POLÍTICA DE PRIVACIDADE COMPLETA E VEM SENDO ATUALIZADO A MEDIDA QUE É UTILIZADO POR PESSOAS QUE ATUAM COM DESENVOLVIMENTO DE SOFTWARE, ADVOCACIA, T.I., CONSULTORIA EM PROTEÇÃO DE DADOS, DENTRE OUTRAS. ESTE É APENAS UM DOS PASSOS NECESSÁRIOS PARA ADEQUAR EMPRESAS À LGPD. PORTANTO, PARA A IMPLEMENTAÇÃO DO PROGRAMA COMPLETO DE ADEQUAÇÃO, PROCURE UM PROFISSIONAL CAPACITADO PARA CONSULTORIA EM PROTEÇÃO DE DADOS.
 
