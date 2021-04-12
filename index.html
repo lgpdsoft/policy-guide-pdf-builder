@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+	<script>
+		if ('serviceWorker' in navigator) {
+			window.addEventListener('load', function() {
+			navigator.serviceWorker.register('sw.js')
+			.then(function() { /* console.log("Service Worker Registered."); */ });
+			});
+		}  
+	</script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="192x192" href="assets/img/favicon/android-chrome-192x192.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon/favicon-16x16.png">
+	<link rel="manifest" href="manifest.json">
+	<link rel="mask-icon" href="assets/img/favicon/safari-pinned-tab.svg" color="#7b7b7b">
+	<meta name="apple-mobile-web-app-title" content="LGPDSOFT">
+	<meta name="application-name" content="LGPDSOFT">
+	<meta name="msapplication-TileColor" content="#2d89ef">
+	<meta name="msapplication-TileImage" content="assets/img/favicon/mstile-144x144.png">
+	<meta name="theme-color" content="#f5f5f0">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3)" href="assets/img/splashscreen/apple-launch-1125x2436.png">
+	<link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)" href="assets/img/splashscreen/apple-launch-750x1334.png">
+	<link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3)" href="assets/img/splashscreen/apple-launch-1242x2208.png">
+	<link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" href="assets/img/splashscreen/apple-launch-640x1136.png">
+	<link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2)" href="assets/img/splashscreen/apple-launch-1536x2048.png">
+	<link rel="apple-touch-startup-image" media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2)" href="assets/img/splashscreen/apple-launch-1668x2224.png">
+	<link rel="apple-touch-startup-image" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2)" href="assets/img/splashscreen/apple-launch-2048x2732.png">
+	<title>LGPDSOFT - Ferramentas tecnológicas para adequação à LGPD</title>
+	<meta name="description" content="Planejamento e desenvolvimento de ferramentas tecnológicas para auxiliar os processos de adequação à Lei 13.709/18 — LGPD.">
+	<meta name="keywords" content="lgpdsoft, lgpd, soft, privacidade, seguranca, dados, pessoais, controle, acesso, transparencia, politica, cookie, termos, condicoes, ferramenta, tecnologia, adequacao">
+	<meta name="author" content="LGPDSOFT (contato@lgpdsoft.com)">
+	<meta name="robots" content="index, follow">
+	<meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+	<meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+	<link rel="canonical" href="https://lgpdsoft.com/projects/policy-guide/builder/pdf">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:site" content="@lgpdsoft">
+	<meta name="twitter:creator" content="@lgpdsoft">
+	<meta name="twitter:title" content="LGPDSOFT - Ferramentas tecnológicas para adequação à LGPD">
+	<meta name="twitter:description" content="Planejamento e desenvolvimento de ferramentas tecnológicas para auxiliar os processos de adequação à Lei 13.709/18 — LGPD.">
+	<meta name="twitter:image" content="assets/img/seo/20210330_600x333.png">
+	<meta property="fb:app_id" content="106659748189873">
+	<meta property="og:site_name" content="LGPDSOFT">
+	<meta property="og:url" content="https://lgpdsoft.com">
+	<meta property="og:title" content="LGPDSOFT - Ferramentas tecnológicas para adequação à LGPD">
+	<meta property="og:description" content="Planejamento e desenvolvimento de ferramentas tecnológicas para auxiliar os processos de adequação à Lei 13.709/18 — LGPD.">
+	<meta property="og:type" content="website">
+	<meta property="og:image" content="assets/img/seo/20210330_1200x628.png">
+	<meta property="og:image:alt" content="LGPDSOFT - Planejamento e desenvolvimento de ferramentas tecnológicas para auxiliar os processos de adequação à Lei 13.709/18 — LGPD" />
+	<meta property="og:image:secure_url" content="https://lgpdsoft.com/projects/policy-guide/builder/pdf/assets/img/seo/20210330_1200x628.png">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+	<link rel="stylesheet" href="assets/css/home.css">
+	<style type="text/css" media="print">
+		@page {
+			size:  auto;
+			margin: 1em;
+		}
+	</style>
+</head>
+<body>
+
+	<div class="control-bar">
+		<div class="container">
+			<div class="row">
+				<div class="slogan">
+					<h1>
+						<div class="d-inline-flex">
+							<img src="assets/img/brand-br.png" class="h-img-center" width="250px" alt="LGPDSOFT - Planejamento e desenvolvimento de ferramentas tecnológicas para auxiliar os processos de adequação à Lei 13.709/18 — LGPD">
+						</div>
+						<span class="d-none">LGPDSOFT - Privacidade e Segurança LGPD  Planejamento e desenvolvimento de ferramentas tecnológicas para auxiliar os processos de adequação à Lei 13.709/18 — LGPD Controle seguro de dados pessoais A transparência de informações que você merece</span>
+					</h1>
+					<span>Privacidade e Segurança LGPD</span>
+				</div>
+				<div class="checkbox-wrapper">
+					<label for="privacyNotice">
+						<input type="checkbox" id="privacyNotice" class="v-align-checkbox" />&nbsp;&nbsp;Aviso de Privacidade
+					</label>
+				</div>
+				<div class="checkbox-wrapper">
+					<label for="termsAndConditions">
+						<input type="checkbox" id="termsAndConditions" class="v-align-checkbox" />&nbsp;&nbsp;Termos e Condições
+					</label>
+				</div>
+				<div class="checkbox-wrapper">
+					<label for="privacyPolicy">
+						<input type="checkbox" id="privacyPolicy" class="v-align-checkbox" />&nbsp;&nbsp;Política de Privacidade
+					</label>
+				</div>
+				<div class="cookie-box h-m-0">
+					<div class="checkbox-wrapper">
+						<label for="cookiePolicy">
+							<input type="checkbox" id="cookiePolicy" class="v-align-checkbox" />&nbsp;&nbsp;Cookies
+						</label>
+					</div>
+					<div class="checkbox-wrapper h-ml-1em">
+						<label for="googleAnalytics">
+							<input type="checkbox" id="googleAnalytics" class="v-align-checkbox" />&nbsp;&nbsp;Google Analytics
+						</label>
+					</div>
+					<div class="checkbox-wrapper h-ml-1em h-mb-1em">
+						<label for="googleAdSense">
+							<input type="checkbox" id="googleAdSense" class="v-align-checkbox" />&nbsp;&nbsp;Google AdSense
+						</label>
+					</div>
+				</div>
+				<div class="btn-print f-right">
+					<a href="https://forms.gle/VNXKj95mKv26RDex9" class="gradient-intuitive-purple">
+						<span class="material-icons v-align-icon">star</span> Avaliar
+					</a>
+					<br>
+					<a href="javascript:window.print()" class="gradient-dimigo">
+						<span class="material-icons v-align-icon">local_printshop</span> Imprimir
+					</a>
+					<br>
+					<a href="https://forms.gle/rFvkpMeaFiLkyLTy8" class="gradient-mojito">
+						<span class="material-icons v-align-icon">whatshot</span> Dúvidas?
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<header class="row">
+		<div class="info h-w-100">
+			<p>
+				<b>Website</b> lgpdsoft.com<br>
+				<b>E-Mail</b> contato@lgpdsoft.com<br>
+				<b>Redes Sociais</b> @lgpdsoft
+			</p>
+		</div>
+		<div class="info h-w-100">
+			<h3>Instruções</h3>
+			<ul>
+				<li>Clique nas caixas de seleção acima para ativar o texto editável de cada tópico;</li>
+				<li>Você pode editar todo o conteúdo, inclusive, copiar (ctrl  + c) e colar (ctrl + v), onde quiser;</li>
+				<li>Clique em "IMPRIMIR" para criar a versão impressa do conteúdo ou salvá-lo na extensão ".PDF";</li>
+				<li>Clique em "Baixar PDF" para salvar a versão atual do documento na extensão ".PDF";</li>
+				<li>Apoie este projeto avaliando. Faça críticas, sugestões e elogios clicando em "AVALIAR";</li>
+				<li>Ainda com dúvidas? Clique em "DÚVIDAS?" para enviar suas questões.</li>
+			</ul>
+			<div class="donwload-wrapper">
+				<p>
+					<a href="assets/file/lgpdsoft_politica-lgpd-v1.pdf" class="btn-download" download="lgpdsoft_politica-lgpd-v1.pdf">
+						<span class="material-icons v-align-icon">arrow_circle_down</span> Baixar PDF <sup>v1</sup>
+					</a>
+				</p>
+			</div>
+			<p class="text-muted text-uppercase"><span class="material-icons h-vertical-align-icon"> warning </span> Este modelo foi desenvolvido para a construção inicial de uma Política de Privacidade completa e vem sendo atualizado a medida que é utilizado por pessoas que atuam com Desenvolvimento de Software, Advocacia, T.I., Consultoria em Proteção de Dados, dentre outros. Este é apenas um dos passos necessários para adequar empresas à LGPD. Portanto, para a implementação do programa completo de adequação procure um profissional capacitado de Consultoria em Proteção de Dados.</p>
+		</div>
+		<footer>
+			<p>&copy; 2020 LGPDSOFT</p>
+		</footer>
+	</header>
+
+	<div class="privacy-notice">
+		<div contenteditable>
+			<h2>Aviso de Privacidade</h2>
+			<p>A sua privacidade é importante para nós e estamos comprometidos em respeitá-la em todos os meios que possuímos e operamos.</p>
+			<p>Ao usar nossos serviços, você confia suas informações a nós e temos a responsabilidade de ser transparentes sobre o que é coletado e como usamos esses dados para fazer com que nossos serviços funcionem melhor para você.</p>
+			<p>Nossa Política de Privacidade destina-se a ajudar você a entender melhor quais informações coletamos, por que as coletamos, armazenamos, tratamos e  compartilhamos com terceiros. Queremos esclarecer também, quais seus direitos como titular dos dados pessoais que fornece e como você pode atualizar, gerenciar, exportar e excluir suas informações.</p>
+			<p>Estamos empenhados ao máximo para proteger suas informações e queremos colocar você no controle da sua privacidade!</p>
+		</div>
+	</div>
+
+	<div class="terms-and-conditions" >
+		<div contenteditable>
+			<h2>Termos e Condições</h2>
+			<h3>Aceitação</h3>
+			<p>Você concorda, ao acessar nossos serviços, que é responsável pelo cumprimento destes Termos e está sujeito a todas as leis e regulamentos aplicáveis.</p>
+			<p>Se você não concordar com a aceitação destes Termos, está proibido de acessar nosso conteúdo.</p>
+			<p>Os materiais contidos em nossas páginas são protegidos pelas leis de direitos autorais e marcas comerciais aplicáveis.</p>
+			<p>Ao acessar nossos serviços, ou se inscrever para receber comunicações por e-mail, você estará concordando com estes Termos.</p>		
+			<h3>Provedor de serviços</h3>
+			<p>Todo conteúdo é fornecido por: LGPDSOFT</p>
+			<p>Disponível em: https://lgpdsoft.com</p>
+			<h3>Uso de licença</h3>
+			<p>Você possui permissão para acessar nosso conteúdo enquanto cumprir com as responsabilidades definidas nestes Termos, bem como as do termo adicional específico do serviço, quando houver.</p>
+			<h4>Introdução</h4>
+			<p>Você possui todos os direitos de propriedade intelectual sobre os conteúdos que desenvolve. Por exemplo, quando cria avaliações a respeito dos nossos serviços.</p>
+			<p>Você também pode compartilhar o conteúdo criativo de outra pessoa, se ela permitir. Por exemplo, quando o conteúdo criativo está publicamente visível.</p>
+			<p>Esta licença não garante direito sobre as sugestões que você oferece para melhorar nossos serviços. Portanto, podemos agir de acordo com a informação do seu comentário quando avalia nossos serviços sem qualquer compromisso com você.</p>
+			<p>Esta licença não afeta seus direitos de privacidade e garante o seu conteúdo se ele for protegido por direitos de propriedade intelectual.</p>
+			<h4>Restrições</h4>
+			<p>Você pode baixar temporariamente uma cópia dos materiais (informações ou software), apenas para visualização transitória pessoal e não comercial.</p>
+			<p>Você não pode: a) modificar ou copiar nossos materiais; b) usar nossos materiais para qualquer finalidade comercial ou para exibição pública (comercial ou não comercial); c) tentar descompilar ou fazer engenharia reversa de qualquer software; d) remover quaisquer direitos autorais ou outras notações de propriedade dos materiais; e) transferir os materiais para outra pessoa ou copiá-los para qualquer outro servidor.</p>
+			<p>Esta é a concessão de uma licença, não é uma transferência de título. Ela poderá ser automaticamente rescindida se você violar alguma dessas restrições, ou rescindida por nós a qualquer momento.</p>
+			<p>Ao encerrar a visualização dos nossos materiais ou após o término desta licença, você deve eliminar todos os materiais baixados em sua posse, seja em formato eletrônico ou impresso.</p>
+			<h4>Isenção de responsabilidade</h4>
+			<p>Nossos materiais são fornecidos “como estão”. Não oferecemos garantias, expressas ou implícitas, portanto, isentamos e negamos todas as outras garantias, incluindo, sem limitação, garantias implícitas ou condições de comercialização, adequação a um fim específico ou não violação de propriedade intelectual ou outra violação de direitos.</p>
+			<p>Os materiais exibidos em nossas páginas podem incluir erros técnicos, textuais, fotográficos e audiovisuais. Sendo assim, não garantimos qualquer representação relativa à precisão, aos resultados prováveis ​​ou à confiabilidade do uso dos materiais disponíveis, ou daqueles de qualquer outra forma relacionados à eles, tampouco de tecnologias ou sites vinculados a qualquer página nossa.</p>
+			<p>Portanto, não garantimos que qualquer material disponível seja atual, esteja estável ou completo.</p>
+			<h4>Links</h4>
+			<p>Não garantimos os sites vinculados em nossas páginas através do compartilhamento de links pelos usuários e não somos responsáveis por nenhum site vinculado. A inclusão de qualquer link não implica endosso por parte nossa, bem como o uso de qualquer site vinculado a nossos serviços é por conta e risco dos utilizadores.</p>
+			<h4>Aplicabilidade</h4>
+			<p>Esta licença: a) é global, o que significa que ela é válida em qualquer lugar do mundo; b) é não exclusiva, o que significa que você pode licenciar seu conteúdo para outras pessoas; c) está livre de royalties, o que significa que não há taxas relacionadas a ela.</p>
+			<h4>Direitos</h4>
+			<p>Esta licença permite a nós: a) hospedar, reproduzir, distribuir, comunicar e usar seu conteúdo, por exemplo, para salvá-lo em nossos sistemas e torná-lo acessível em qualquer lugar; b) publicar, apresentar ou expor publicamente seu conteúdo, se ele tiver sido deixado visível publicamente; c) modificar ou criar obras derivadas do seu conteúdo, por exemplo, re-formatando ou traduzindo-o; d) sub-licenciar esses direitos para outros usuários de modo a permitir que os serviços funcionem como planejado, por exemplo, ao ativar o compartilhamento de fotos com as pessoas que você escolher; e) sub-licenciar esses direitos para nossos prestadores de serviços que assinaram contratos conosco de acordo com estes Termos.</p>
+			<h4>Finalidade</h4>
+			<p>Esta licença é destinada aos fins restritos de: a) operar e melhorar os serviços criados; b) usar o conteúdo que você compartilhou publicamente para promover esses serviços; c) desenvolver novos serviços e tecnologias de acordo com estes Termos.</p>
+			<h4>Duração</h4>
+			<p>Esta licença dura enquanto seu conteúdo estiver protegido por direitos de propriedade intelectual.</p>
+			<p>Se você remover dos nossos serviços qualquer conteúdo que seja coberto por esta licença, nossos sistemas farão com que esse conteúdo deixe de estar disponível publicamente em um prazo razoável. Entretanto, há duas exceções: a) se você já compartilhou seu conteúdo com outras pessoas antes de removê-lo. Por exemplo, se você compartilhou uma foto com um amigo que fez uma cópia dela ou a compartilhou novamente, neste caso, essa foto poderá continuar aparecendo mesmo depois que você removeu o seu conteúdo; b) se você disponibiliza seu conteúdo por meio dos serviços de outras empresas, é possível que os mecanismos de pesquisa continuem encontrando e exibindo seu conteúdo como parte dos resultados deles.</p>
+		</div>
+		<div contenteditable>
+			<h3>Disposições finais</h3>
+			<p>Por lei, você tem direitos que não podem ser limitados por um contrato, como estes Termos. Então, não pretendemos, de forma alguma, restringir esses direitos.</p>
+			<p>Estes Termos descrevem a nossa relação com você. Eles não geram nenhum direito legal para outras pessoas ou organizações, mesmo que elas se beneficiem desse relacionamento.</p>
+			<p>Queremos que estes Termos sejam fáceis de entender, por isso, usamos exemplos baseados nos nossos serviços ou serviços de outrem popularmente conhecidos. No entanto, é possível que nem todos os serviços que oferecemos estejam disponíveis no seu país.</p>
+			<p>Se estes Termos entrarem em conflito com o termo adicional específico de um serviço, o termo adicional específico prevalecerá. Caso o termo adicional específico do serviço não for aplicável, estes Termos prevalecerão unanimemente.</p>
+			<p>Se você não seguir estes Termos, ou o termo adicional específico do serviço e, não tomarmos as medidas cabíveis imediatamente, isso não significa que estamos desistindo de quaisquer direitos que possamos ter, como tomar as medidas cabíveis futuramente.</p>
+			<p>Podemos transferir ou ceder a posição contratual nestes Termos, ou qualquer direito, ou obrigação deles decorrentes a qualquer tempo, sem a necessidade de prévio aviso, inclusive, em razão de operações societárias tais como, mas não se limitando, a fusões, aquisições, reestruturações, mantidas as demais condições destes Termos.</p>
+			<p>Podemos atualizar estes Termos e o termo adicional específico do serviço para refletir mudanças em nossos serviços ou na maneira como fazemos negócios. Por exemplo, quando adicionamos serviços, recursos, tecnologias, preços ou benefícios novos (ou removemos os antigos), por motivos jurídicos, regulatórios, de segurança, ou para evitar abusos e danos.</p>
+			<p>Se fizermos mudanças significativas nestes Termos, ou no termo adicional específico do serviço, avisaremos com antecedência razoável e daremos a você oportunidade para analisar essas mudanças. Exceto quando lançarmos um novo serviço ou recurso em situações urgentes, como para evitar abusos atuais ou responder a requisitos legais. Inclusive, se não concordar com os novos Termos, você deverá remover seu conteúdo e parar de usar os serviços.</p>
+			<p>Estes Termos são regidos e interpretados de acordo com as leis do Brasil e você se submete irrevogavelmente à jurisdição dos tribunais em Belo Horizonte/MG para dirimir eventuais controvérsias oriundas dos presentes Termos, renunciando expressamente a qualquer outro, por mais privilegiado que seja.</p>
+			<p>Estes Termos podem ser revisados a qualquer momento, sem aviso prévio.</p>
+			<p>Cumpra as disposições presentes nestes Termos e conheça a nossa Política de Privacidade, que estabelece informações transparentes sobre como realizamos o tratamento e o compartilhamento dos seus dados pessoais, bem como quais são os direitos que você possui e como deve exercê-los.</p>
+			<p>Em vigor a partir de 03 de abril de 2021.</p>
+		</div>
+	</div>
+
+	<div class="privacy-policy">
+		<div contenteditable>
+			<h2>Política de Privacidade</h2>
+			<h3>Introdução</h3>
+			<p>Esta Política de Privacidade destina-se a ajudar você a entender quais informações coletamos, por que as coletamos, tratamos, compartilhamos e como você pode atualizar, gerenciar, exportar e excluir essas informações.</p>
+			<p>Nossos serviços incluem: a) sites, dispositivos e aplicações, como o Guia de Política LGPD; b) plataformas, como o Blog; c) produtos integrados a aplicações e sites de terceiros, como anúncios do Google AdSense.</p>
+			<p>Solicitamos por meios justos e legais, apenas as informações pessoais essenciais para os nossos negócios. Elas serão armazenadas e protegidas com meios aceitáveis de segurança da informação para evitar acesso não autorizado, somente pelo tempo necessário para prestação do serviço ou alcance da finalidade pretendida.</p>
+			<h3>Tecnologias</h3>
+			<p>Frequentemente buscamos ideias e produtos que desafiam os limites da tecnologia existente. No papel de empresa responsável, nós trabalhamos muito para ter certeza de que qualquer inovação esteja equilibrada com o nível adequado de privacidade e segurança para os nossos usuários.</p>
+			<div class="cookie-policy h-m-0">
+				<h4>Cookies</h4>
+				<p>Um cookie é um pequeno texto enviado ao seu navegador por um site que você visita. Ele ajuda o site a se lembrar de informações sobre a visita, facilitando o acesso e tornando os recursos do site mais úteis para você. Por exemplo, usamos cookies para lembrar seu idioma preferido, mostrar anúncios relevantes, contar quantos visitantes recebemos em uma página, proteger seus dados e lembrar suas configurações preferidas para acesso rápido ao site, quando visitado novamente. As páginas (ou “páginas web”) de um site ou serviço possuem coleções específicas de informações exibidas ao usuário através de um navegador e os cookies desempenham um papel importante na experiência interativa para o engajamento do usuário nestas páginas, sem os cookies, preferências exclusivas do usuário teriam que ser definidas constantemente, por exemplo.</p>
+				<h4>Como usamos?</h4>
+				<p>Cookies podem armazenar uma ampla variedade de informações, incluindo dados pessoais, como: nome, endereço, e-mail, telefone, dentre outros. Entretanto, essas informações só ficarão armazenadas se você fornecê-las, sites não conseguem acessar informações que você não forneceu e não podem acessar outros arquivos no seu computador. É recomendável que você deixe ativo todos os cookies se não tiver certeza se precisa ou não deles, caso sejam usados ​​para fornecer um serviço que você precisa usar constantemente.</p>
+				<h4>Cookies que definimos</h4>
+				<p>Os cookies relacionados abaixo podem ser armazenados no seu navegador. Você pode gerenciar como eles são usados, recusando o uso específico de cookies a qualquer momento, nas configurações de personalização do seu navegador, embora os navegadores para dispositivos móveis possam não oferecer essa opção.</p>
+				<h5>Cookies de conta</h5>
+				<p>Ao criar uma conta conosco, usamos cookies para o gerenciamento do processo de inscrição e administração geral da sua conta por meio de um sistema. Os cookies de conta geralmente são excluídos quando você sai do sistema, porém, em alguns casos, eles poderão permanecer posteriormente para lembrar suas preferências ao entrar no sistema novamente, por exemplo.</p>
+				<h5>Cookies de login</h5>
+				<p>Utilizamos estes cookies quando você está logado, para que possamos lembrar dessa ação. Isso evita que você precise fazer login sempre que visitar uma nova página. Esses cookies são normalmente removidos quando você sai do sistema para garantir que você possa acessar apenas recursos e áreas restritas do sistema ao entrar.</p>
+				<h5>Cookies de e-mail</h5>
+				<p>Oferecemos serviços de assinatura para o boletim informativo ou e-mail e estes cookies podem ser usados ​​para lembrar que você já se registrou na enquete, ou mostrar notificações específicas, visíveis apenas para usuários inscritos, por exemplo.</p>
+				<h5>Cookies de processamento</h5>
+				<p>Oferecemos facilidades de comércio eletrônico e meios de pagamento, portanto, alguns cookies são essenciais para garantir que seu pedido seja lembrado entre as páginas, para que possamos processá-lo adequadamente. Por exemplo, quando um pedido permanece salvo na cesta de um carrinho de compras em uma loja virtual.</p>
+				<h5>Cookies de pesquisas</h5>
+				<p>Periodicamente, realizamos pesquisas a partir de formulários para desenvolver soluções interessantes e cada vez mais úteis para os nossos usuários. Essas pesquisas nos ajudam a identificar problemas comuns das pessoas e a compreender melhor seus anseios. Os cookies de pesquisas podem ser usados para lembrar quem já participou de uma enquete ou para guardar resultados específicos do questionário respondido, mesmo após a alteração das páginas de pesquisa.</p>
+				<h5>Cookies de formulários</h5>
+				<p>Quando você envia dados por meio de um formulário eletrônico, como os encontrados nas páginas de contato, ou por meio de comentários avaliativos, os cookies podem ser configurados para lembrar detalhes sobre as respostas enviadas, ou até mesmo lembrar ao sistema que você já enviou as informações e, que portanto, novas solicitações para preenchimento não devem ser enviadas a você.</p>
+				<h5>Cookies de preferências</h5>
+				<p>Para proporcionar a você uma ótima experiência, fornecemos configurações de conta em nossos sistemas, que possibilitam a definição de preferências pessoais enquanto você faz uso dos nossos serviços. Para lembrar as preferências que você define, utilizamos cookies, que guardam essas informações, permitindo que as preferências determinadas estejam sempre disponíveis ao interagir com uma página.</p>
+				<h5>Cookies de publicidade</h5>
+				<p>Utilizamos anúncios para compensar os custos de funcionamento e fornecer financiamento para futuros desenvolvimentos. Os cookies de publicidade guardam informações sobre a interatividade do usuário com os anúncios ofertados em páginas dos nossos sites e serviços, possibilitando que o seu padrão comportamental de interesse forneça os anúncios mais relevantes sempre que possível para você, rastreando anonimamente seus interesses para apresentar os anúncios mais úteis.</p>
+				<h5>Cookies de rastreamento</h5>
+				<p>Vários parceiros podem anunciar em nosso nome e os cookies de rastreamento nos permitem ver se nossos clientes acessaram o site por meio do link compartilhado pelos nossos parceiros afiliados. Desta forma, podemos creditá-los adequadamente e, quando aplicável, permitir que links promocionais permaneçam ativos a qualquer tempo. Por exemplo, quando um cookie salva informações sobre o clique do usuário em uma determinada promoção, que vai ser retirada do ar pelo afiliado compartilhador em alguns minutos, mas que pode ter seus descontos vigentes através das informações que foram salvas.</p>
+				<h5>Cookies de terceiros</h5>
+				<p>Em alguns casos especiais, também usamos cookies fornecidos por terceiros confiáveis. A seção a seguir detalha quais cookies de terceiros você pode encontrar em nossos serviços.</p>
+				<div class="google-analytics h-m-0">
+					<h6>Google Analytics</h6>
+					<p>Usamos o Google Analytics, que é uma das soluções de análise mais difundidas e confiáveis ​​da Web, para nos ajudar a entender como você interage com o nosso conteúdo e como podemos melhorar sua experiência. Esses cookies podem rastrear informações sobre quanto tempo você gasta em uma página e quais foram as páginas visitadas por você, por exemplo. Para mais informações sobre cookies do Google Analytics, consulte a página oficial do Google Analytics em: https://analytics.google.com.</p>
+				</div>
+				<div class="google-ad-sense h-m-0">
+					<h6>Google AdSense</h6>
+					<p>Usamos o Google AdSense para veicular publicidade relevante ao usuário e limitar o número de vezes que um determinado anúncio é exibido para você. Para mais informações, consulte as páginas oficiais de perguntas frequentes (FAQs) do Google AdSense em: https://www.google.com/intl/pt-BR_br/adsense/start/.</p>
+				</div>
+				<h4>Tipos de cookies</h4>
+				<h5>Necessários</h5>
+				<p>O que eles fazem? Estes cookies garantem que o usuário interaja com as funcionalidades do serviço de forma satisfatória e segura. Fazemos uso de alguns cookies de segurança para autenticar usuários, evitar a utilização fraudulenta de credenciais de login e proteger os dados do usuário de terceiros não autorizados. Por isso, esses cookies são considerados por nós como “essenciais” e não recomendamos desativá-los.</p>
+				<p>Espécies: PHPSESSID</p>
+				<h5>Funcionais</h5>
+				<p>O que eles fazem? Estes cookies permitem que as páginas se lembrem de suas escolhas, para proporcionar uma experiência personalizada acerca de gostos específicos. Por exemplo, você pode manter a sua idade verificada ou alterar o tema utilizado no estilo da página para garantir acessibilidade inclusiva</p>
+				<p>Espécies: verified_age; a18y_theme</p>
+				<h5>Marketing</h5>
+				<p>O que eles fazem? Estes cookies são utilizados para fornecer conteúdo específico e relevante ao usuário, sendo utilizados para apresentar publicidade direcionada, inclusive, também são usados para medir a eficácia de uma campanha publicitária. Por exemplo, esses cookies podem ser usados para indicar a quantidade de visitas em uma página, além de possibilitar o compartilhamento dessas informações com terceiros, tais como agências publicitárias contratadas.</p>
+				<p>Espécies: GPS</p>
+				<h5>Análises</h5>
+				<p>O que eles fazem? Estes cookies nos ajudam a entender como os visitantes interagem com nossas páginas, fornecendo informações como, por exemplo: as áreas do site que foram visitadas e o tempo de visita em cada página. Além disso, podem oferecer suporte a funcionalidades dinâmicas como, por exemplo, manter a análise em tempo real da interação do usuário para exibir notificações específicas na tela. Estas análises nos orientam a definir estilos de páginas mais agradáveis para os visitantes, bem como oferecem parâmetros analíticos para o desenvolvimento e aprimoramento de funcionalidades que assegurem uma experiência agradável e única para você.</p>
+				<p>Espécies: _ga; _ga_7QC7SV6H7D</p>
+				<h5>YouTube</h5>
+				<p>O que eles fazem? Estes cookies são necessários para a utilização dos serviços do YouTube (https://www.youtube.com) toda vez que você assiste um vídeo do Youtube em nossas páginas.</p>
+				<p>Espécies: __Secure-3PSIDCC; SIDCC; SAPISID; __Secure-3PAPISID; HSID; APISID; __Secure-3PSID; SSID; IDE; DSID; YSC; LOGIN_INFO; PREF; _gcl_au; VISITOR_INFO1_LIVE</p>
+				<h4>Gerenciar cookies</h4>
+				<p>A maioria dos navegadores permite que você gerencie como os cookies são definidos e usados na navegação, além de permitir limpar cookies e dados de navegação (consulte a ajuda do seu navegador para saber como fazer isso do jeito certo, seguro e recomendado). Seu navegador também pode ter configurações que permitem gerenciar cookies site por site. Por exemplo, as configurações do Google Chrome possibilitam excluir cookies existentes, permitir, bloquear e definir preferências exclusivas para um site. O Google Chrome também oferece o modo de navegação anônima, que não armazena o histórico de sites visitados, ou os cookies no dispositivo, depois que você fecha todas as janelas anônimas.</p>
+				<p>Esteja ciente que a desativação de cookies afetará a funcionalidade das páginas e de muitos outros sites que você visita, pois resultará na inativação de determinadas funcionalidades e recursos, que podem ser essenciais para um serviço. Portanto, é recomendável que você não desative os cookies, mas caso queira desativá-los, recomendamos que siga as orientações oficiais do seu navegador. Estas são algumas opções de suporte que selecionamos para você com alguns dos navegadores existentes:</p>
+				<h5>Google</h5>
+				<p>https://support.google.com/chrome/answer/95647?hl=pt-BR</p>
+				<h5>Firefox</h5>
+				<p>https://support.mozilla.org/pt-BR/kb/cookies-informacoes-sites-armazenam-no-computador</p>
+				<h5>Safari</h5>
+				<p>https://support.apple.com/pt-br/guide/safari/sfri11471/mac</p>
+				<h5>Microsoft Edge</h5>
+				<p>https://support.microsoft.com/pt-br/help/4027947/microsoft-edge-delete-cookies</p>
+				<h5>Internet Explorer</h5>
+				<p>https://support.microsoft.com/pt-br/help/17442/windows-internetexplorer-delete-manage-cookies</p>
+				<p>Lembre-se que os navegadores para dispositivos móveis (celulares, tablets, etc.) podem não oferecer a opção de desativação de cookies.</p>
+			</div>
+			<h3>Configuração de dados</h3>
+			<p>Explicaremos como lidamos com as informações coletadas dos utilizadores em nossas páginas, como armazenamos e tratamos esses dados. Logo, todas as operações realizadas por nós no tratamento de dados pessoais observam a boa-fé dos nossos atos e toda a legislação da lei 13.709/2018 — Lei Geral de Proteção de Dados Pessoais (LGPD).</p>
+			<h4>Informações pessoais</h4>
+			<h5>O que queremos dizer com "informações pessoais"?</h5>
+			<p>Para nós, "informações pessoais" significa as informações que identificam você. Coletamos esses dados quando você os informa em uma página através do formulário eletrônico, por exemplo.</p>
+			<p>As “informações pessoais” podem possuir a natureza de dados sensíveis, quando abordam dados pessoais sobre origem racial ou étnica, convicção religiosa, opinião pública, filiação a sindicato ou a organização de caráter religioso, filosófico ou político, dado referente à saúde ou à vida sexual, dado genético ou biométrico. Conforme o artigo 5°, II, da Lei 13.709/18 - Lei Geral de Proteção de Dados Pessoais (LGPD).</p>
+			<p>Quaisquer outras informações não constituem "informações pessoais".</p>
+			<p>Se suas informações pessoais forem armazenadas com outras informações, consideramos a combinação como informações pessoais. Se excluirmos todas as informações pessoais de um conjunto de dados, as informações remanescentes não constituirão informações pessoais.</p>
+			<h5>Como recebemos informações sobre você?</h5>
+			<p>Recebemos informações sobre você quando: a) você nos fornece diretamente (por exemplo, quando você se cadastra em um serviço pelo telefone); b) coletamos essas informações automaticamente por meio dos nossos produtos e serviços (por exemplo, através dos formulários eletrônicos); c) tentamos descobrir mais sobre você considerando as informações que nos foram fornecidas (por exemplo, quando usamos o número do telefone para analisar o DDD de origem e personalizar informações relevantes para determinada região).</p>
+			<h5>O que fazemos com suas informações?</h5>
+			<p>Quando você nos envia informações pessoais, nós as utilizamos de acordo com sua permissão. Em geral, usamos essas informações para nos ajudar a melhorar nossos produtos e serviços para você.</p>
+			<h5>Quando compartilhamos suas informações com terceiros?</h5>
+			<p>Se tivermos sua autorização.</p>
+			<p>Suas informações também podem ser compartilhadas para o processamento ou fornecimento de produtos e serviços, mas somente se as pessoas que receberem suas informações estiverem contratualmente obrigadas a manter os dados da forma como está proposto nesta Política.</p>
+			<p>Podemos divulgar informações para melhorar nossos produtos e fomentar a transparência na Internet e, nesse caso, excluiremos suas informações pessoais de modo que você não possa ser identificado.</p>
+			<p>Suas informações pessoais também serão compartilhadas se obrigatório por lei. Observamos as leis sempre que recebemos uma solicitação de uma autoridade governamental ou de natureza judicial envolvendo nossos usuários. Notificaremos você se formos solicitados a entregar suas informações pessoais, exceto se estivermos legalmente proibidos de fazê-lo.</p>
+			<p>Nenhuma disposição nesta política pretende limitar quaisquer defesas legais ou objeções que você possa ter em relação a um pedido de terceiros para divulgação de suas informações.</p>
+			<p>Portanto, somente serão compartilhadas suas informações se entendermos, em boa-fé, que estamos obrigados por lei e isso é razoavelmente necessário para proteger os seus e os nossos direitos, bens ou segurança.</p>
+			<h4>Armazenamento</h4>
+			<p>Temos um compromisso com a proteção de suas informações pessoais. Portanto, assim que as recebemos, implementamos medidas de segurança físicas, comerciais e técnicas.</p>
+			<p>Contudo, apesar dos nossos esforços, se tivermos ciência de uma violação de segurança, notificaremos nossos usuários para que possam ser tomadas as medidas cautelares cabíveis. Também queremos manter suas informações pessoais somente pelo prazo necessário para alcançar a finalidade pretendida. Quando essas informações não forem mais necessárias, providenciaremos a destruição delas, salvo se estivermos obrigados por lei a mantê-las por um prazo superior.</p>
+			<p>Nossas informações são armazenadas de forma global em computadores que se encontram em diversos locais ao redor do mundo. Também utilizamos operadoras, cujos computadores também podem estar localizados em diversos países. Isso significa que suas informações podem ser armazenadas em um desses computadores em outro país, e esse país pode ter uma regulamentação de proteção de dados distinta do seu país. Então, ao nos fornecer suas informações, você estará concordando com a transferência delas. Independentemente do país em que suas informações estiverem, cumpriremos a legislação aplicável observando todos os compromissos assumidos nesta Política.</p>
+			<h4>Crianças e adolescentes</h4>
+			<p>Se você for menor de 18 anos, não estamos interessados em suas informações pessoais e elas não devem ser fornecidas. Se, como pai/mãe, você entender que seu filho menor de 18 anos forneceu alguma informação pessoal, entre em contato imediatamente com o encarregado de proteção de dados (“DPO”), na seção “DPO”, em “Direitos do Titular”, desta política, para que as informações dele(a) sejam excluídas imediatamente e definitivamente.</p>
+			<h4>Coleta de dados</h4>
+			<p>Coletamos dados para fornecer serviços melhores, o que inclui analisar e identificar coisas básicas, como o idioma que você fala, até coisas mais complexas, como examinar a sua interatividade com as páginas dos nossos serviços.</p>
+			<p>Armazenamos as informações coletadas enquanto você interage com nossos serviços e mantemos essas informações quando você não está visitando nossas páginas, isso é o que nos permite manter as preferências de idiomas em todas as páginas visitadas durante sua navegação, por exemplo.</p>
+			<p>Quando você está interagindo com algum conteúdo, coletamos informações para tratamento, incluindo: a) o seu endereço de IP; b) o modelo do seu dispositivo; c) o seu sistema operacional; d) o tipo de navegador utilizado e sua respectiva versão; e) suas configurações de geo-localização e fuso horário; f) data e hora para definir o tempo que você passa nas nossas páginas e; g) o URL referenciador das suas que você visita, para saber que tipos de conteúdo são mais interessantes para você. Também coletamos o conteúdo que você cria, de que fez upload ou que recebe de outras pessoas ao usar nossos serviços. Por exemplo, quando você faz comentários avaliando nossos serviços.</p>
+			<p>Você tem escolhas em relação a algumas informações que coletamos e como elas são usadas. Você pode gerenciar essas informações alterando as configurações de Privacidade e Segurança da sua conta, por exemplo.</p>
+			<h5>O que pedimos?</h5>
+			<p>Quando você usa algum dos nossos serviços, pedimos informações, que podem ou não serem pessoais. Essas informações ajudam a manter sua conta segura (por exemplo, quando você usa dados específicos como autenticação para acessar serviços em um ambiente controlado e seguro) e nossos serviços mais úteis (por exemplo, quando mantemos o idioma nativo do seu navegador como padrão para demonstrar nosso conteúdo).</p>
+			<h6>Nome</h6>
+			<p>O seu nome será exibido no conteúdo compartilhado com outras pessoas. Por exemplo, quando você distribui um documento ou uma foto.</p>
+			<h6>E-mail</h6>
+			<p>O seu e-mail será usado como identificador de acesso, bem como meio de contato. Por exemplo, quando você acessa sua conta em um dos nossos serviços ou recebe promoções na sua caixa de entrada.</p>
+			<p>Recomendamos que use um endereço de email do Google através do Gmail (https://www.google.com/intl/pt/gmail/about), mas você é livre para usar qualquer o endereço de e-mail que desejar, apesar da nossa recomendação.</p>
+			<h6>Celular</h6>
+			<p>O seu número de celular será utilizado em diferentes serviços. Por exemplo, para enviarmos SMS, ou entrarmos em contato através de ligações, ou ainda, através de qualquer aplicativo multiplataforma de mensagens instantâneas e chamadas de voz para telefones celulares, para o envio de mensagens de texto, imagens, vídeos e documentos.</p>
+			<h6>Senha</h6>
+			<p>Para ajudar a manter sua conta segura, escolha uma “senha forte” com pelo menos oito caracteres. Uma “senha forte” pode ser criada a partir de: uma mistura de letras maiúsculas (A-Z) e minúsculas (a-z), números (0-9) e símbolos (!@#$). Evite informações pessoais ou palavras comuns que sejam fáceis de adivinhar. Por exemplo, nome da sua rua ou do seu animal de estimação.</p>
+			<p>Não use uma senha que já tenha sido usada para outras contas e, da mesma forma, não use a senha recém definida em um serviço em outro lugar.</p>
+			<h4>Tratamento</h4>
+			<h5>Agentes de tratamento</h5>
+			<h6>Controlador(es)</h6>
+			<p>Aos agentes controladores, compete o papel de tomar decisões referentes ao tratamento de dados pessoais.</p>
+			<h6>Operador(es)</h6>
+			<p>Aos agentes operadores, compete o papel de realizar o tratamento de dados pessoais em nome do controlador.</p>
+			<h5>Natureza dos dados</h5>
+			<p>Dados pessoais, não sensíveis, fornecidos pelo usuário (por meio de formulários eletrônicos, por exemplo) e/ou coletados automaticamente (durante as rotinas de análises estatísticas por meio do Google Analytics, por exemplo).</p>
+			<h5>Finalidade</h5>
+			<p>Utilizar os dados pessoais coletados para fins publicitários, como: o envio de informações sobre propostas, campanhas, eventos e notícias.</p>
+			<h5>Base legal</h5>
+			<p>Consentimento do titular. Neste caso, o tratamento de dados é autorizado pelo inciso I do artigo 7º da Lei nº 13.709/2018, Lei Geral de Proteção de Dados Pessoais (LGPD).</p>
+			<h5>Compartilhamento</h5>
+			<p>As informações coletadas em nossas páginas poderão ser compartilhadas com terceiros: a) empresas do grupo societário; b) empresas parceiras envolvidas em atividades comerciais (como empresas fornecedoras de serviços de Marketing, Publicidade e Propaganda, por exemplo); c) para proteção dos nossos interesses em qualquer tipo de conflito, incluindo ações judiciais; d) mediante ordem judicial ou pelo requerimento de autoridades administrativas que detenham competência legal para sua requisição.</p>
+			<p>Os terceiros se responsabilizam por todos os dados pessoais recebidos, bem como a obrigação de tratá-los, contratualmente, somente para atender a nossa finalidade e devem observar integralmente o disposto na Lei 13.709/2018 (“LGPD”) em todas as suas ações. Eles se responsabilizam pelo armazenamento e tratamento dos dados pessoais em ambiente seguro e controlado, assim como, estão impedidos de comercializar os dados recebidos, mesmo após o tratamento.</p>
+			<p>Nossos contratados estão obrigados contratualmente a eliminar todos os arquivos recebidos com dados pessoais, no formato eletrônico ou impresso, bem como todos os resultados do tratamento, salvo se estiverem obrigados por lei a mantê-las por um prazo mais longo.</p>
+			<h5>Segurança</h5>
+			<p>Adotamos medidas de segurança, técnicas e administrativas, adequadas para armazenar, de forma segura, em servidores próprios ou contratados, as informações pessoais coletadas.</p>
+			<p>Utilizamos meios razoáveis de mercado e legalmente requeridos para preservar a privacidade dos dados coletados. Desta forma, adotamos as seguintes precauções, em observância às diretrizes sobre padrões de segurança estabelecidas no Decreto n° 8.771/2016 (que regulamenta a lei 12.965/2014, a lei do Marco Civil da Internet),  tais como: a) o uso de soluções de gestão dos registros por meio de técnicas que garantam a inviolabilidade dos dados, como encriptação ou medidas de proteção equivalentes (anonimização) dos dados coletados; b) o estabelecimento de controle estrito sobre o acesso aos dados mediante a definição de responsabilidades das pessoas que terão possibilidade de acesso e de privilégios de acesso exclusivo para determinados usuários (por exemplo, quando exigimos a autenticação do usuário para acesso à conta pessoal); c) o acesso autorizado apenas para pessoas previamente estabelecidas ao local de armazenagem das informações coletadas. As pessoas que entrarem em contato com as informações deverão se comprometer a manter sigilo absoluto. A quebra do sigilo acarretará responsabilidade civil e o responsável será responsabilizado nos moldes da legislação brasileira; d) criação de inventário detalhado dos acessos aos registros. Indicando a data, duração, identidade do acessante ou do responsável pelo acesso designado pela empresa e o arquivo acessado, conforme determinado no artigo 13, inciso III, do Decreto nº 8.771/2016.</p>
+			<p>Adotamos os melhores esforços, no sentido de preservar a privacidade dos dados pessoais. Entretanto, nenhum meio de segurança da informação é totalmente seguro e à prova de falhas, portanto, não podemos garantir integralmente, que todas as informações que trafegam nas páginas dos nossos serviços, não serão alvo de acessos não autorizados perpetrados por meio de métodos desenvolvidos para obter informações de forma indevida. Por esse motivo, nós incentivamos os usuários a tomar as medidas apropriadas de segurança para se protegerem, como: manter confidencial todos os dados de autenticação em nossos serviços.</p>
+			<h5>Vigência</h5>
+			<p>O tratamento de dados pessoais terminará quando for verificado que a finalidade foi alcançada ou que os dados deixaram de ser necessários ou pertinentes ao alcance da finalidade explícita mencionada anteriormente. Neste caso, os dados pessoais serão mantidos até: 29/03/2022 às 23:59:59, salvo se estivermos obrigados por lei a mantê-las por um prazo mais longo.</p>
+			<h4>Direitos dos titular</h4>
+			<p>De acordo com a Lei Geral de Proteção de Dados Pessoais do Brasil (13.709/18, LGPD), você tem o direito de acessar, corrigir, eliminar e portabilizar seus dados pessoais a outro fornecedor de serviço ou produto, além de confirmar o tratamento de dados realizado por nós. Em determinadas circunstâncias, você também tem o direito de se opor e restringir o tratamento desses dados, obter informações sobre quais foram as entidades públicas e privadas que o controlador realizou uso compartilhado dos dados, bem como a revisão de decisões tomadas unicamente com base em tratamento automatizado de dados pessoais, que afetem seus interesses. Inclusive, as decisões destinadas a definir o seu perfil pessoal, profissional, de consumo e de crédito ou os aspectos de sua personalidade.</p>
+			<p>Cumpriremos, através de procedimento gratuito e facilitado, mediante solicitação e obrigações legais, as demandas acerca dos seus dados pessoais. Nos casos de eliminação dos dados, eles serão excluídos definitivamente, ressalvadas as hipóteses de guarda obrigatória de registros previstas na legislação.</p>
+			<p>Entre em contato a qualquer momento com o encarregado de dados, também conhecido como Data Protection Officer (“DPO”), para exercer seus direitos como titular de dados pessoais.</p>
+			<h5>Encarregado de dados</h5>
+			<p>Se você tiver dúvidas sobre como lidamos com suas informações pessoais, entre em contato a qualquer momento conosco através do e-mail dpo.email@email.com.</p>
+			<p>Você também tem o direito de peticionar em relação aos seus dados perante a Autoridade Nacional de Proteção de Dados (“ANPD”). Para isso, entre em contato diretamente com a ANPD.</p>
+			<h3>Disposições finais</h3>
+			<p>Esta Política retrata como tratamos suas informações, pois somos responsáveis pelo processamento dessas informações e temos o compromisso de obedecer a todas as leis aplicáveis.</p>
+			<p>Você não é obrigado a dispor dos seus dados pessoais ou ceder o seu consentimento. As consequências da sua negativa de consentimento, bem como o aceite de cookies, refletirão em serviços limitados, incompletos ou indisponíveis com proporções restritas de satisfação.</p>
+			<p>Esta Política pode ser revisada a qualquer momento, sem aviso prévio.</p>
+			<p>Se as alterações forem consideráveis, anunciaremos as atualizações em nossos canais de comunicação, como: sites, blogues e redes sociais.</p>
+			<p>Em vigor a partir de 03 de abril de 2021.</p>
+		</div>
+	</div>
+
+	<script  src="assets/js/home.js"></script>
+
+</body>
+</html>
